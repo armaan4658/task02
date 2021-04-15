@@ -9,8 +9,8 @@ req.onload=function(){
     //converting the data to JSON
     var data = JSON.parse(this.response);
     console.log("Countries :");
-    //using for loop to print out the country name's
-    for(let i = 0; i < 250; i++){
+    //using for in loop to print out the country name's
+    for(let i in data){
         console.log(data[i].name);
     }
 
